@@ -12,6 +12,9 @@
     --muted: #5a6572;
     --rule: #dde3e9;
     --link: #0b5cad;
+    --force: #2f6fb5;
+    --phase: #a8780a;
+    --ion: #2b8467;
     --serif: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, serif;
     --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   }
@@ -22,6 +25,9 @@
       --muted: #9aa5b1;
       --rule: #2c343d;
       --link: #86b6ee;
+      --force: #6fa3e0;
+      --phase: #d9ab45;
+      --ion: #5cc19d;
     }
   }
   * { box-sizing: border-box; }
@@ -107,9 +113,40 @@
     border-left: 2px solid var(--rule);
   }
 
+  .decomp {
+    display: flex;
+    height: 0.9rem;
+    margin: 0 0 1.2rem;
+    border-radius: 0.3rem;
+    overflow: hidden;
+  }
+  .decomp a { flex: 1; display: block; }
+  .decomp a + a { margin-left: 4px; }
+  .decomp a:focus-visible { outline-offset: 3px; }
+  .c-force { background: var(--force); }
+  .c-phase { background: var(--phase); }
+  .c-ion   { background: var(--ion); }
+
   .tasks { list-style: none; padding: 0; margin: 0; }
-  .tasks li { margin-bottom: 0.9rem; }
+  .tasks li {
+    position: relative;
+    padding-left: 1.4rem;
+    margin-bottom: 0.9rem;
+  }
   .tasks li:last-child { margin-bottom: 0; }
+  .tasks li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.5em;
+    width: 0.65rem;
+    height: 0.65rem;
+    border-radius: 2px;
+    background: var(--swatch);
+  }
+  .tasks .force { --swatch: var(--force); }
+  .tasks .phase { --swatch: var(--phase); }
+  .tasks .ion   { --swatch: var(--ion); }
   .tasks strong { font-weight: 700; }
 
   .tools { font-family: var(--sans); font-size: 0.9375rem; color: var(--muted); }
@@ -172,11 +209,16 @@
       <p>A framework that evaluates FPs against DFT on the quantities and configurations that decide whether a computational task succeeds, rather than on dataset-averaged error alone. It is applied to three tasks:</p>
 
       <div class="parts">
+      <div class="decomp" role="group" aria-label="The three tasks, each linking to its leaderboard">
+        <a class="c-force" href="https://mogroupumd.github.io/FP-DeErr/force-error.html" aria-label="Force prediction leaderboard" title="Force prediction"></a>
+        <a class="c-phase" href="https://mogroupumd.github.io/FP-DeErr/phase-stability-ordering.html" aria-label="Phase stability and elemental ordering leaderboard" title="Phase stability and elemental ordering"></a>
+        <a class="c-ion" href="https://mogroupumd.github.io/FP-DeErr/ion-migration-neb.html" aria-label="Ion migration by NEB leaderboard" title="Ion migration by NEB"></a>
+      </div>
 
       <ul class="tasks">
-        <li><strong>Force prediction.</strong> Metrics for highly accurate, large-error, and far-from-equilibrium atoms, which average MAE/RMSE hides. <a href="https://mogroupumd.github.io/FP-DeErr/force-error.html">Leaderboard</a></li>
-        <li><strong>Phase stability and elemental ordering.</strong> Convex-hull agreement and energy-ranking metrics for competing phases and orderings, separating energy-ranking errors from relaxation errors. <a href="https://mogroupumd.github.io/FP-DeErr/phase-stability-ordering.html">Leaderboard</a></li>
-        <li><strong>Ion migration by NEB.</strong> FP-NEB benchmarked against DFT-NEB on 154 Li- and Na-ion pathways, tracing barrier errors to the potential energy surface, endpoint relaxation, and along-path forces. <a href="https://mogroupumd.github.io/FP-DeErr/ion-migration-neb.html">Leaderboard</a></li>
+        <li class="force"><strong>Force prediction.</strong> Metrics for highly accurate, large-error, and far-from-equilibrium atoms, which average MAE/RMSE hides. <a href="https://mogroupumd.github.io/FP-DeErr/force-error.html">Leaderboard</a></li>
+        <li class="phase"><strong>Phase stability and elemental ordering.</strong> Convex-hull agreement and energy-ranking metrics for competing phases and orderings, separating energy-ranking errors from relaxation errors. <a href="https://mogroupumd.github.io/FP-DeErr/phase-stability-ordering.html">Leaderboard</a></li>
+        <li class="ion"><strong>Ion migration by NEB.</strong> FP-NEB benchmarked against DFT-NEB on 154 Li- and Na-ion pathways, tracing barrier errors to the potential energy surface, endpoint relaxation, and along-path forces. <a href="https://mogroupumd.github.io/FP-DeErr/ion-migration-neb.html">Leaderboard</a></li>
       </ul>
       </div>
       <p class="tools">Tools: Python, ASE, MatCalc, pymatgen, SLURM on HPC</p>
