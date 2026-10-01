@@ -112,6 +112,24 @@ h1 {
 }
 .links.icons a:hover, .links.icons a:focus-visible { color: var(--link); }
 .links.icons svg { display: block; width: 1.45rem; height: 1.45rem; }
+.links.icons .scholar { color: #4285f4; }
+.links.icons .orcid { color: #a6ce39; }
+.links.icons .linkedin { color: #0a66c2; }
+.links.icons .scholar:hover, .links.icons .orcid:hover, .links.icons .linkedin:hover { color: var(--link); }
+.cv-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.45rem;
+  height: 1.45rem;
+  border: 2px solid currentColor;
+  border-radius: 4px;
+  font-family: var(--sans);
+  font-size: 0.6875rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  line-height: 1;
+}
 
 .about { margin: 0 0 0.75rem; }
 
