@@ -127,47 +127,43 @@ h3 {
 p.meta a { margin-right: 1rem; }
 p { margin: 0 0 0.75rem; }
 
-.parts {
-  margin: 1.1rem 0 1.1rem 0.3rem;
-  padding-left: 1.1rem;
-  border-left: 2px solid var(--rule);
+/* FP-DeErr task cards: figure on top, description below */
+.task-cards {
+  list-style: none;
+  margin: 0.4rem 0 1rem;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.9rem;
 }
-
-.decomp {
+.task-cards li {
   display: flex;
-  height: 0.9rem;
-  margin: 0 0 1.2rem;
-  border-radius: 0.3rem;
-  overflow: hidden;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 0.8rem 0.85rem 0.9rem;
+  border: 1px solid var(--rule);
+  border-top: 4px solid var(--swatch);
+  border-radius: 6px;
 }
-.decomp a { flex: 1; display: block; }
-.decomp a + a { margin-left: 4px; }
-.decomp a:focus-visible { outline-offset: 3px; }
-.c-force { background: var(--force); }
-.c-phase { background: var(--phase); }
-.c-ion   { background: var(--ion); }
-
-.tasks { list-style: none; padding: 0; margin: 0; }
-.tasks li {
-  position: relative;
-  padding-left: 1.4rem;
-  margin-bottom: 0.9rem;
-}
-.tasks li:last-child { margin-bottom: 0; }
-.tasks li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.5em;
-  width: 0.65rem;
-  height: 0.65rem;
-  border-radius: 2px;
-  background: var(--swatch);
-}
-.tasks .force { --swatch: var(--force); }
-.tasks .phase { --swatch: var(--phase); }
-.tasks .ion   { --swatch: var(--ion); }
-.tasks strong { font-weight: 700; }
+.task-cards .force { --swatch: var(--force); }
+.task-cards .phase { --swatch: var(--phase); }
+.task-cards .ion   { --swatch: var(--ion); }
+.task-cards p { margin: 0; font-size: 0.9375rem; line-height: 1.55; }
+.task-cards strong { font-weight: 700; }
+.task-fig { display: block; padding: 0.2rem 0.3rem 0; border-radius: 4px; }
+.task-fig:focus-visible { outline-offset: 3px; }
+.task-fig svg { display: block; width: 100%; height: auto; overflow: visible; }
+.task-fig .f-dft, .task-fig .f-fp, .task-fig .f-arc, .task-fig .f-base { fill: none; stroke-width: 4.6; }
+.task-fig .f-dft { stroke: var(--ink); }
+.task-fig .f-fp { stroke: var(--swatch); stroke-dasharray: 13 9; }
+.task-fig .f-dft-fill { fill: var(--ink); }
+.task-fig .f-fp-fill { fill: var(--swatch); }
+.task-fig .f-fp-pt { fill: var(--bg); stroke: var(--swatch); stroke-width: 3.5; }
+.task-fig .f-other, .task-fig .f-atom { fill: none; stroke: var(--muted); stroke-width: 2.5; }
+.task-fig .f-arc { stroke: var(--muted); stroke-width: 2.5; }
+.task-fig .f-base { stroke: var(--rule); stroke-width: 2.5; }
+.task-fig .f-label { fill: var(--muted); font-size: 24px; font-style: italic; font-family: var(--sans); }
+.task-cards li:hover { border-color: var(--swatch); }
 
 .tools { font-family: var(--sans); font-size: 0.9375rem; color: var(--muted); }
 
@@ -262,7 +258,6 @@ footer {
   font-size: 0.8125rem;
 }
 
-
 /* research interests */
 .interests-label { margin: 0 0 0.3rem; font-weight: 700; }
 .interests { margin: 0 0 1rem; padding-left: 1.2rem; }
@@ -297,6 +292,8 @@ footer {
 @media (max-width: 40rem) {
   .portrait .affil { display: none; }
   .project-body { grid-template-columns: 1fr; }
+  .task-cards { grid-template-columns: 1fr; }
+  .task-fig { max-width: 15rem; }
   .fig { max-width: 9.5rem; }
   .news li { grid-template-columns: 4.75rem 1fr; gap: 0.75rem; }
 }

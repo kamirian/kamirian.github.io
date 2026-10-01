@@ -107,27 +107,27 @@
       <div class="project-body">
       <div>
       <p>A framework that evaluates FPs against DFT on the quantities and configurations that decide whether a computational task succeeds, rather than on dataset-averaged error alone. It is applied to three tasks:</p>
-
-      <div class="parts">
-      <div class="decomp" role="group" aria-label="The three tasks, each linking to its leaderboard">
-        <a class="c-force" href="https://mogroupumd.github.io/FP-DeErr/force-error.html" aria-label="Force prediction leaderboard" title="Force prediction"></a>
-        <a class="c-phase" href="https://mogroupumd.github.io/FP-DeErr/phase-stability-ordering.html" aria-label="Phase stability and elemental ordering leaderboard" title="Phase stability and elemental ordering"></a>
-        <a class="c-ion" href="https://mogroupumd.github.io/FP-DeErr/ion-migration-neb.html" aria-label="Ion migration by NEB leaderboard" title="Ion migration by NEB"></a>
-      </div>
-
-      <ul class="tasks">
-        <li class="force"><strong>Force prediction.</strong> Metrics for highly accurate, large-error, and far-from-equilibrium atoms, which average MAE/RMSE hides. <a href="https://mogroupumd.github.io/FP-DeErr/force-error.html">Leaderboard</a></li>
-        <li class="phase"><strong>Phase stability and elemental ordering.</strong> Convex-hull agreement and energy-ranking metrics for competing phases and orderings, separating energy-ranking errors from relaxation errors. <a href="https://mogroupumd.github.io/FP-DeErr/phase-stability-ordering.html">Leaderboard</a></li>
-        <li class="ion"><strong>Ion migration by NEB.</strong> FP-NEB benchmarked against DFT-NEB on 154 Li- and Na-ion pathways, tracing barrier errors to the potential energy surface, endpoint relaxation, and along-path forces. <a href="https://mogroupumd.github.io/FP-DeErr/ion-migration-neb.html">Leaderboard</a></li>
-      </ul>
-      </div>
-      <p class="tools">Tools: Python, ASE, MatCalc, pymatgen, SLURM on HPC</p>
       </div>
       <figure class="fig">
         <a href="https://mogroupumd.github.io/FP-DeErr/"><img src="fp-deerr-logo.png" alt="FP-DeErr logo, linking to the leaderboard" width="520" height="548" loading="lazy"></a>
         <figcaption><a href="fp-deerr-overview.png">Overview figure</a></figcaption>
       </figure>
       </div>
+      <ul class="task-cards">
+        <li class="force">
+          <a class="task-fig" href="https://mogroupumd.github.io/FP-DeErr/force-error.html" aria-label="Force prediction leaderboard"><svg viewBox="0 -6 270 152" aria-hidden="true"><circle class="f-atom" cx="30" cy="125" r="10"/><line class="f-dft" x1="30" y1="125" x2="235" y2="62"/><polygon class="f-dft-fill" points="249,57 226,50 232,75"/><line class="f-fp" x1="30" y1="125" x2="190" y2="20"/><polygon class="f-fp-fill" points="201,10 179,14 193,32"/><path class="f-arc" d="M 137.1 92.1 A 112 112 0 0 0 123.6 63.6"/><text class="f-label" x="155.1" y="76.1">Δθ</text></svg></a>
+          <p><strong>Force prediction.</strong> Metrics for highly accurate, large-error, and far-from-equilibrium atoms, which average MAE/RMSE hides. <a href="https://mogroupumd.github.io/FP-DeErr/force-error.html">Leaderboard</a></p>
+        </li>
+        <li class="phase">
+          <a class="task-fig" href="https://mogroupumd.github.io/FP-DeErr/phase-stability-ordering.html" aria-label="Phase stability and elemental ordering leaderboard"><svg viewBox="0 -6 270 152" aria-hidden="true"><polyline class="f-dft" points="20,22 70,92 135,122 200,95 255,18"/><polyline class="f-fp" points="20,22 70,106 135,112 200,106 255,18"/><circle class="f-dft-fill" cx="20" cy="22" r="8"/><circle class="f-dft-fill" cx="70" cy="92" r="8"/><circle class="f-dft-fill" cx="135" cy="122" r="8"/><circle class="f-dft-fill" cx="200" cy="95" r="8"/><circle class="f-dft-fill" cx="255" cy="18" r="8"/><circle class="f-fp-pt" cx="70" cy="106" r="7.5"/><circle class="f-fp-pt" cx="135" cy="112" r="7.5"/><circle class="f-fp-pt" cx="200" cy="106" r="7.5"/><circle class="f-other" cx="105" cy="70" r="6.5"/><circle class="f-other" cx="165" cy="60" r="6.5"/><circle class="f-other" cx="232" cy="48" r="6.5"/><circle class="f-other" cx="46" cy="48" r="6.5"/></svg></a>
+          <p><strong>Phase stability and elemental ordering.</strong> Convex-hull agreement and energy-ranking metrics for competing phases and orderings, separating energy-ranking errors from relaxation errors. <a href="https://mogroupumd.github.io/FP-DeErr/phase-stability-ordering.html">Leaderboard</a></p>
+        </li>
+        <li class="ion">
+          <a class="task-fig" href="https://mogroupumd.github.io/FP-DeErr/ion-migration-neb.html" aria-label="Ion migration by NEB leaderboard"><svg viewBox="0 -6 270 152" aria-hidden="true"><line class="f-base" x1="15" y1="138" x2="262" y2="138"/><path class="f-dft" d="M 15 120 C 80 120, 100 15, 140 15 S 200 105, 255 105"/><path class="f-fp" d="M 15 120 C 80 120, 100 55, 140 55 S 200 118, 255 118"/><circle class="f-dft-fill" cx="15" cy="120" r="8"/><circle class="f-dft-fill" cx="140" cy="15" r="8"/><circle class="f-dft-fill" cx="255" cy="105" r="8"/><circle class="f-fp-pt" cx="140" cy="55" r="7.5"/><circle class="f-fp-pt" cx="255" cy="118" r="7.5"/></svg></a>
+          <p><strong>Ion migration by NEB.</strong> FP-NEB benchmarked against DFT-NEB on 154 Li- and Na-ion pathways, tracing barrier errors to the potential energy surface, endpoint relaxation, and along-path forces. <a href="https://mogroupumd.github.io/FP-DeErr/ion-migration-neb.html">Leaderboard</a></p>
+        </li>
+      </ul>
+      <p class="tools">Tools: Python, ASE, MatCalc, pymatgen, SLURM on HPC</p>
     </article>
 
     <div class="earlier">
