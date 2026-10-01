@@ -102,6 +102,17 @@ h1 {
   font-family: var(--sans);
   font-size: 0.9375rem;
 }
+/* contact links shown as icons (Font Awesome Free, CC BY 4.0) */
+.links.icons { gap: 0.5rem 1.15rem; margin-left: -0.3rem; }
+.links.icons a {
+  display: inline-flex;
+  padding: 0.3rem;
+  border-radius: 6px;
+  color: var(--ink);
+}
+.links.icons a:hover, .links.icons a:focus-visible { color: var(--link); }
+.links.icons svg { display: block; width: 1.45rem; height: 1.45rem; }
+
 .about { margin: 0 0 0.75rem; }
 
 section { margin-top: 2.75rem; }
