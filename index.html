@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kiyan Amirian | PhD Student, University of Maryland</title>
-<meta name="description" content="Kiyan Amirian, PhD student in Materials Science and Engineering at the University of Maryland. Research on the reliability of foundation potentials and machine-learned interatomic potentials.">
+<meta name="description" content="Kiyan Amirian, PhD student in Materials Science and Engineering at the University of Maryland. Application-oriented benchmarks, error decomposition, and reliable foundation potentials for materials simulation.">
 <meta name="google-site-verification" content="5pK13K2RclhC91JU0y3HVxyg9ny5Kujt7pJMzuO2uZ0" />
 <link rel="canonical" href="https://kamirian.github.io/">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -12,7 +12,7 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta property="og:type" content="profile">
 <meta property="og:title" content="Kiyan Amirian">
-<meta property="og:description" content="PhD student in Materials Science and Engineering at the University of Maryland. Research on the reliability of foundation potentials and machine-learned interatomic potentials.">
+<meta property="og:description" content="PhD student in Materials Science and Engineering at the University of Maryland. Application-oriented benchmarks, error decomposition, and reliable foundation potentials for materials simulation.">
 <meta property="og:url" content="https://kamirian.github.io/">
 <meta property="og:image" content="https://kamirian.github.io/photo.jpg">
 <link rel="stylesheet" href="style.css">
@@ -45,73 +45,76 @@
 </script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 <nav class="topbar" aria-label="Site">
   <a class="home" href="./" aria-current="page">Kiyan Amirian</a>
   <ul>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#projects">Projects</a></li>
     <li><a href="hobbies.html">Hobbies</a></li>
     <li><a href="cv.pdf">CV</a></li>
   </ul>
 </nav>
-<main>
+<main id="main">
 
   <header class="intro">
     <div>
+      <p class="eyebrow">Machine learning for atomistic simulation</p>
       <h1>Kiyan Amirian</h1>
-      <p class="role">PhD student in <a href="https://mse.umd.edu/">Materials Science and Engineering</a> at the <a href="https://umd.edu/">University of Maryland</a>, advised by <a href="https://yifeimo.github.io/">Prof. Yifei Mo</a></p>
+      <p class="role">PhD student in <a href="https://mse.umd.edu/">Materials Science and Engineering</a> at the <a href="https://umd.edu/">University of Maryland</a>, advised by <a href="https://yifeimo.github.io/">Prof. Yifei Mo</a>.</p>
+
+      <p class="lead">I work at the intersection of machine learning and computational materials science.</p>
+      <p class="about">My work combines physical modeling and scientific computing to develop atomistic simulation workflows and assess the reliability of foundation potentials (FPs). I designed and developed <a href="#fp-deerr">FP-DeErr</a>, an open-source framework that decomposes FP errors to identify their sources in specific applications and guide the development of more reliable models.</p>
       <ul class="buttons">
-        <li><a class="email" href="mailto:kamirian@umd.edu"><svg aria-hidden="true" focusable="false" width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill="currentColor" d="M48 64c-26.5 0-48 21.5-48 48 0 15.1 7.1 29.3 19.2 38.4l208 156c17.1 12.8 40.5 12.8 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48L48 64zM0 196L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-188-198.4 148.8c-34.1 25.6-81.1 25.6-115.2 0L0 196z"/></svg><span>Email</span></a></li>
-        <li><a class="cv" href="cv.pdf"><svg aria-hidden="true" focusable="false" width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill="currentColor" d="M0 64C0 28.7 28.7 0 64 0L213.5 0c17 0 33.3 6.7 45.3 18.7L365.3 125.3c12 12 18.7 28.3 18.7 45.3L384 448c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 64zm208-5.5l0 93.5c0 13.3 10.7 24 24 24L325.5 176 208 58.5zM120 256c-13.3 0-24 10.7-24 24s10.7 24 24 24l144 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-144 0zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24l144 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-144 0z"/></svg><span>CV</span></a></li>
-        <li><a class="scholar" href="https://scholar.google.com/citations?user=ynnug98AAAAJ"><svg aria-hidden="true" focusable="false" width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill="currentColor" d="M390.9 298.5s0 .1 .1 .1c9.2 19.4 14.4 41.1 14.4 64-.1 82.5-66.9 149.4-149.4 149.4S106.7 445.1 106.7 362.7c0-22.9 5.2-44.6 14.4-64 1.7-3.6 3.6-7.2 5.6-10.7 4.4-7.6 9.4-14.7 15-21.3 27.4-32.6 68.5-53.3 114.4-53.3 33.6 0 64.6 11.1 89.6 29.9 9.1 6.9 17.4 14.7 24.8 23.5 5.6 6.6 10.6 13.8 15 21.3 2 3.4 3.8 7 5.5 10.5l-.1-.1zm26.4-18.8c-30.1-58.4-91-98.4-161.3-98.4s-131.2 40-161.3 98.4l-94.7-77 256-202.7 256 202.7-94.7 77.1 0-.1z"/></svg><span>Scholar</span></a></li>
-        <li><a class="orcid" href="https://orcid.org/0009-0000-5906-4664"><svg aria-hidden="true" focusable="false" width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill="currentColor" d="M294.7 188.2l-45.9 0 0 153.8 47.5 0c67.6 0 83.1-51.3 83.1-76.9 0-41.6-26.5-76.9-84.7-76.9zM256 8a248 248 0 1 0 0 496 248 248 0 1 0 0-496zM175.2 368.8l-29.8 0 0-207.5 29.8 0 0 207.5zM160.3 98.5a19.6 19.6 0 1 1 0 39.2 19.6 19.6 0 1 1 0-39.2zM300 369l-81 0 0-207.7 80.6 0c76.7 0 110.4 54.8 110.4 103.9 0 53.3-41.7 103.9-110 103.9z"/></svg><span>ORCID</span></a></li>
-        <li><a class="github" href="https://github.com/kamirian"><svg aria-hidden="true" focusable="false" width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5l0 52C323 491.5 335.5 500 350.5 494 441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5l0-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21z"/></svg><span>GitHub</span></a></li>
-        <li><a class="linkedin" href="https://www.linkedin.com/in/kiyan-amirian-370240180"><svg aria-hidden="true" focusable="false" width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill="currentColor" d="M416 32L31.9 32C14.3 32 0 46.5 0 64.3L0 447.7C0 465.5 14.3 480 31.9 480L416 480c17.6 0 32-14.5 32-32.3l0-383.4C448 46.5 433.6 32 416 32zM135.4 416l-66.4 0 0-213.8 66.5 0 0 213.8-.1 0zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77zM384.3 416l-66.4 0 0-104c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9l0 105.8-66.4 0 0-213.8 63.7 0 0 29.2 .9 0c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9l0 117.2z"/></svg><span>LinkedIn</span></a></li>
+        <li><a class="email" href="mailto:kamirian@umd.edu"><svg aria-hidden="true" focusable="false" width="14" height="14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill="currentColor" d="M48 64c-26.5 0-48 21.5-48 48 0 15.1 7.1 29.3 19.2 38.4l208 156c17.1 12.8 40.5 12.8 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48L48 64zM0 196L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-188-198.4 148.8c-34.1 25.6-81.1 25.6-115.2 0L0 196z"/></svg><span>Email</span></a></li>
+        <li><a class="cv" href="cv.pdf"><svg aria-hidden="true" focusable="false" width="14" height="14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill="currentColor" d="M0 64C0 28.7 28.7 0 64 0L213.5 0c17 0 33.3 6.7 45.3 18.7L365.3 125.3c12 12 18.7 28.3 18.7 45.3L384 448c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 64zm208-5.5l0 93.5c0 13.3 10.7 24 24 24L325.5 176 208 58.5zM120 256c-13.3 0-24 10.7-24 24s10.7 24 24 24l144 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-144 0zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24l144 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-144 0z"/></svg><span>CV</span></a></li>
+        <li><a class="scholar" href="https://scholar.google.com/citations?user=ynnug98AAAAJ"><svg aria-hidden="true" focusable="false" width="14" height="14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill="currentColor" d="M390.9 298.5s0 .1 .1 .1c9.2 19.4 14.4 41.1 14.4 64-.1 82.5-66.9 149.4-149.4 149.4S106.7 445.1 106.7 362.7c0-22.9 5.2-44.6 14.4-64 1.7-3.6 3.6-7.2 5.6-10.7 4.4-7.6 9.4-14.7 15-21.3 27.4-32.6 68.5-53.3 114.4-53.3 33.6 0 64.6 11.1 89.6 29.9 9.1 6.9 17.4 14.7 24.8 23.5 5.6 6.6 10.6 13.8 15 21.3 2 3.4 3.8 7 5.5 10.5l-.1-.1zm26.4-18.8c-30.1-58.4-91-98.4-161.3-98.4s-131.2 40-161.3 98.4l-94.7-77 256-202.7 256 202.7-94.7 77.1 0-.1z"/></svg><span>Scholar</span></a></li>
+        <li><a class="orcid" href="https://orcid.org/0009-0000-5906-4664"><svg aria-hidden="true" focusable="false" width="14" height="14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill="currentColor" d="M294.7 188.2l-45.9 0 0 153.8 47.5 0c67.6 0 83.1-51.3 83.1-76.9 0-41.6-26.5-76.9-84.7-76.9zM256 8a248 248 0 1 0 0 496 248 248 0 1 0 0-496zM175.2 368.8l-29.8 0 0-207.5 29.8 0 0 207.5zM160.3 98.5a19.6 19.6 0 1 1 0 39.2 19.6 19.6 0 1 1 0-39.2zM300 369l-81 0 0-207.7 80.6 0c76.7 0 110.4 54.8 110.4 103.9 0 53.3-41.7 103.9-110 103.9z"/></svg><span>ORCID</span></a></li>
+        <li><a class="github" href="https://github.com/kamirian"><svg aria-hidden="true" focusable="false" width="14" height="14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5l0 52C323 491.5 335.5 500 350.5 494 441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5l0-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21z"/></svg><span>GitHub</span></a></li>
+        <li><a class="linkedin" href="https://www.linkedin.com/in/kiyan-amirian-370240180"><svg aria-hidden="true" focusable="false" width="14" height="14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc. --><path fill="currentColor" d="M416 32L31.9 32C14.3 32 0 46.5 0 64.3L0 447.7C0 465.5 14.3 480 31.9 480L416 480c17.6 0 32-14.5 32-32.3l0-383.4C448 46.5 433.6 32 416 32zM135.4 416l-66.4 0 0-213.8 66.5 0 0 213.8-.1 0zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77zM384.3 416l-66.4 0 0-104c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9l0 105.8-66.4 0 0-213.8 63.7 0 0 29.2 .9 0c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9l0 117.2z"/></svg><span>LinkedIn</span></a></li>
       </ul>
-      <p class="about">I work at the intersection of machine learning and computational materials science. My research focuses on diagnosing where machine-learned interatomic potentials fail in realistic atomistic simulations, to guide the development of more reliable models.</p>
-      <p class="about">Outside of research, I play tennis and watch films. More on my <a href="hobbies.html">hobbies</a> page.</p>
+      <p class="personal">Away from research: <a href="hobbies.html">tennis and films</a>.</p>
     </div>
     <figure class="portrait">
       <img src="photo.jpg" alt="Portrait of Kiyan Amirian" width="600" height="800">
     </figure>
   </header>
 
-  <section class="card" aria-labelledby="interests">
-    <h2 id="interests">Research interests</h2>
+  <section class="card focus-section" aria-labelledby="interests">
+    <h2 id="interests">Research focus</h2>
     <ol class="interests">
-      <li><span class="i-title">Machine-learned interatomic potentials</span><span class="i-text">Where foundation potentials fail in real simulations, and how to measure it beyond average energy and force errors.</span></li>
-      <li><span class="i-title">Atomistic simulation</span><span class="i-text">DFT, NEB and molecular dynamics workflows, and how model errors propagate through them.</span></li>
-      <li><span class="i-title">Computational materials science</span><span class="i-text">Phase stability, elemental ordering and ion migration in solid-state ionic conductors.</span></li>
-      <li><span class="i-title">AI for science</span><span class="i-text">Machine learning as a scientific tool, from interatomic potentials to efficient LLM inference.</span></li>
+      <li><span class="i-label">Reliability</span><h3>Reliable foundation potentials for materials simulation</h3><p>Design application-oriented benchmarks and task-specific error metrics to assess the reliability of foundation potentials in materials simulations, beyond what average energy and force errors reveal.</p></li>
+      <li><span class="i-label">Materials physics</span><h3>Materials simulation and discovery</h3><p>Use first-principles calculations and atomistic simulations to study phase stability, atomic ordering, and ion migration, with the aim of guiding materials discovery.</p></li>
     </ol>
-  </section>
-
-  <section class="card" aria-labelledby="news">
-    <h2 id="news">News</h2>
-    <ul class="news">
-      <li><span class="date">Sep 2026</span><span>FP-DeErr posted on <a href="https://arxiv.org/abs/2609.05714">arXiv</a>, with open evaluation <a href="https://github.com/mogroupumd/FP-DeErr">code</a> and a public <a href="https://mogroupumd.github.io/FP-DeErr/">leaderboard</a>.</span></li>
-      <li><span class="date">2024</span><span>Joined <a href="https://yifeimo.github.io/">Prof. Yifei Mo's group</a> at the University of Maryland.</span></li>
-      <li><span class="date">Aug 2023</span><span>Started my PhD in Materials Science and Engineering at the University of Maryland.</span></li>
-      <li><span class="date">Spring 2023</span><span>Awarded the University of Maryland Dean's Fellowship.</span></li>
-      <li><span class="date">Apr 2023</span><span>Published my first journal paper, <a href="https://journal.issiran.com/article_707246.html"><em>Analytical and numerical instability analysis of functionally graded low-carbon steel</em></a>.</span></li>
-    </ul>
+    <div class="research-interests">
+      <h3>Research interests</h3>
+      <ul>
+        <li>Machine-learned interatomic potentials</li>
+        <li>Atomistic simulation</li>
+        <li>Computational materials science</li>
+        <li>AI for science</li>
+      </ul>
+    </div>
   </section>
 
   <section class="card" aria-labelledby="research">
-    <h2 id="research">Research</h2>
+    <h2 id="research">Selected research</h2>
 
-    <article class="entry">
+    <article class="entry research-entry" id="fp-deerr">
       <div class="entry-head">
-        <h3>FP-DeErr: application-oriented error decomposition for foundation potentials</h3>
+        <h3>FP-DeErr: Application-Oriented Error Decomposition for Foundation Potentials</h3>
         <span class="when">2024 to present</span>
       </div>
-      <p class="meta">University of Maryland</p>
+      <p class="authors"><strong>Kiyan Amirian</strong>, Ramanuja Srinivasan Saravanan, Felix Adams, Charles E Schwarz, Yifei Mo</p>
+      <p class="meta">First author · arXiv preprint, 2026 · University of Maryland</p>
       <p class="meta links-row">
-        <a href="https://arxiv.org/abs/2609.05714">Paper (arXiv)</a>
+        <a href="https://arxiv.org/abs/2609.05714">Preprint</a>
         <a href="https://github.com/mogroupumd/FP-DeErr">Code</a>
         <a href="https://mogroupumd.github.io/FP-DeErr/">Leaderboard</a>
         <a href="fp-deerr-overview.png">Overview figure</a>
       </p>
       <div class="project-body">
-        <p>A framework that evaluates FPs against DFT on the quantities and configurations that decide whether a computational task succeeds, rather than on dataset-averaged error alone. It is applied to three tasks:</p>
+        <p>Designed and developed FP-DeErr, an application-oriented error-decomposition framework for foundation potentials. Co-designed the study and carried out benchmarking against density functional theory (DFT), introducing task-specific metrics to identify where errors arise and how they affect simulation outcomes across three tasks:</p>
         <figure class="logo">
           <a href="https://mogroupumd.github.io/FP-DeErr/"><img src="fp-deerr-logo.png" alt="FP-DeErr logo, linking to the leaderboard" width="520" height="548" loading="lazy"></a>
         </figure>
@@ -119,55 +122,81 @@
       <ul class="task-cards">
         <li class="force">
           <a class="task-fig" href="https://mogroupumd.github.io/FP-DeErr/force-error.html" aria-label="Force prediction leaderboard"><svg viewBox="0 -6 270 152" aria-hidden="true"><circle class="f-atom" cx="30" cy="125" r="10"/><line class="f-dft" x1="30" y1="125" x2="235" y2="62"/><polygon class="f-dft-fill" points="249,57 226,50 232,75"/><line class="f-fp" x1="30" y1="125" x2="190" y2="20"/><polygon class="f-fp-fill" points="201,10 179,14 193,32"/><path class="f-arc" d="M 137.1 92.1 A 112 112 0 0 0 123.6 63.6"/><text class="f-label" x="155.1" y="76.1">Δθ</text></svg></a>
-          <p><strong>Force prediction.</strong> Metrics for highly accurate, large-error, and far-from-equilibrium atoms, which average MAE/RMSE hides. <a href="https://mogroupumd.github.io/FP-DeErr/force-error.html">Leaderboard</a></p>
+          <p><strong>Force prediction.</strong> Designed magnitude- and direction-based diagnostics to expose large errors and far-from-equilibrium failures obscured by average force-error metrics. <a href="https://mogroupumd.github.io/FP-DeErr/force-error.html">Leaderboard</a></p>
         </li>
         <li class="phase">
           <a class="task-fig" href="https://mogroupumd.github.io/FP-DeErr/phase-stability-ordering.html" aria-label="Phase stability and elemental ordering leaderboard"><svg viewBox="0 -6 270 152" aria-hidden="true"><polyline class="f-dft" points="20,22 70,92 135,122 200,95 255,18"/><polyline class="f-fp" points="20,22 70,106 135,112 200,106 255,18"/><circle class="f-dft-fill" cx="20" cy="22" r="8"/><circle class="f-dft-fill" cx="70" cy="92" r="8"/><circle class="f-dft-fill" cx="135" cy="122" r="8"/><circle class="f-dft-fill" cx="200" cy="95" r="8"/><circle class="f-dft-fill" cx="255" cy="18" r="8"/><circle class="f-fp-pt" cx="70" cy="106" r="7.5"/><circle class="f-fp-pt" cx="135" cy="112" r="7.5"/><circle class="f-fp-pt" cx="200" cy="106" r="7.5"/><circle class="f-other" cx="105" cy="70" r="6.5"/><circle class="f-other" cx="165" cy="60" r="6.5"/><circle class="f-other" cx="232" cy="48" r="6.5"/><circle class="f-other" cx="46" cy="48" r="6.5"/></svg></a>
-          <p><strong>Phase stability and elemental ordering.</strong> Convex-hull agreement and energy-ranking metrics for competing phases and orderings, separating energy-ranking errors from relaxation errors. <a href="https://mogroupumd.github.io/FP-DeErr/phase-stability-ordering.html">Leaderboard</a></p>
+          <p><strong>Phase stability and elemental ordering.</strong> Designed convex-hull agreement metrics and evaluated energy rankings to test which phases and atomic orderings a model selects, separating ranking errors from relaxation errors. <a href="https://mogroupumd.github.io/FP-DeErr/phase-stability-ordering.html">Leaderboard</a></p>
         </li>
         <li class="ion">
           <a class="task-fig" href="https://mogroupumd.github.io/FP-DeErr/ion-migration-neb.html" aria-label="Ion migration by NEB leaderboard"><svg viewBox="0 -6 270 152" aria-hidden="true"><line class="f-base" x1="15" y1="138" x2="262" y2="138"/><path class="f-dft" d="M 15 120 C 80 120, 100 15, 140 15 S 200 105, 255 105"/><path class="f-fp" d="M 15 120 C 80 120, 100 55, 140 55 S 200 118, 255 118"/><circle class="f-dft-fill" cx="15" cy="120" r="8"/><circle class="f-dft-fill" cx="140" cy="15" r="8"/><circle class="f-dft-fill" cx="255" cy="105" r="8"/><circle class="f-fp-pt" cx="140" cy="55" r="7.5"/><circle class="f-fp-pt" cx="255" cy="118" r="7.5"/></svg></a>
-          <p><strong>Ion migration by NEB.</strong> FP-NEB benchmarked against DFT-NEB on 154 Li- and Na-ion pathways, tracing barrier errors to the potential energy surface, endpoint relaxation, and along-path forces. <a href="https://mogroupumd.github.io/FP-DeErr/ion-migration-neb.html">Leaderboard</a></p>
+          <p><strong>Ion migration by nudged elastic band (NEB).</strong> Designed agreement metrics beyond migration-barrier accuracy to assess FP reliability across 154 Li- and Na-ion pathways, testing energy-profile shape, endpoint energy ranking, and convergence. Decomposed errors into contributions from the energy landscape, endpoint relaxation, and pathway forces. <a href="https://mogroupumd.github.io/FP-DeErr/ion-migration-neb.html">Leaderboard</a></p>
         </li>
       </ul>
-      <p class="tools">Tools: Python, ASE, MatCalc, pymatgen, SLURM on HPC</p>
+      <p class="tools">Models evaluated include UMA, MACE, and CHGNet.<br>Python · ASE · MatCalc · pymatgen · SLURM / HPC</p>
     </article>
 
-    <article class="entry">
+    <article class="entry research-entry" id="graded-steel">
       <div class="entry-head">
-        <h3>Instability of functionally graded low-carbon steel</h3>
+        <h3>Analytical and numerical instability analysis of functionally graded low-carbon steel</h3>
         <span class="when">2019 to 2022</span>
       </div>
-      <p class="meta">Shiraz University</p>
+      <p class="authors"><strong>Kiyan Amirian</strong>, Zahra Abbasi, Ramin Ebrahimi</p>
+      <p class="meta">International Journal of Iron &amp; Steel Society of Iran · 19(2), 66–72 · 2023</p>
       <p class="meta links-row">
         <a href="https://journal.issiran.com/article_707246.html">Paper</a>
         <a href="https://journal.issiran.com/article_707246_1290962fbafc1c5d3e7ade5ec40076f9.pdf">PDF</a>
+        <a href="https://doi.org/10.22034/ijissi.2023.1990580.1262">DOI</a>
       </p>
       <div class="paper-body">
-        <p>An algorithm that predicts the tensile curve and instability point of functionally graded low-carbon steel, whose hardening properties (<i>n</i>, <i>K</i>) vary with radius. It matches experiment up to necking and shows that instability occurs at a true strain close to the cross-section-averaged hardening exponent.</p>
+        <div class="paper-copy">
+          <p>I developed an algorithm to predict tensile instability in functionally graded low-carbon steel, accounting for radial variations in the work-hardening exponent and strength coefficient.</p>
+          <p>My analysis compared the predicted tensile response with published experimental data and related the calculated strain at maximum load to the cross-section-averaged work-hardening exponent.</p>
+        </div>
         <figure class="paper-fig">
           <a href="instability-fig7.png"><img src="instability-fig7.png" alt="Engineering stress versus engineering strain for the 650 °C annealed sample: calculated curve (dashed) and experimental curve (solid), with the calculated peak marked at 0.18" width="630" height="348" loading="lazy"></a>
-          <figcaption>Calculated (dashed) and experimental (solid; L. Wang et al., 2019) curves for the 650&nbsp;°C sample. The marked peak is the calculated instability point.</figcaption>
+          <figcaption>Predicted (dashed) and experimental (solid; Wang et al., 2019) tensile response for the 650&nbsp;°C sample.</figcaption>
         </figure>
       </div>
     </article>
   </section>
 
   <section class="card" aria-labelledby="projects">
-    <h2 id="projects">Course projects</h2>
+    <h2 id="projects">Selected ML projects</h2>
+    <p class="section-intro">Course projects in machine learning implementation and efficient LLM inference.</p>
     <ul class="boxes">
       <li class="entry">
         <div class="entry-head"><h3>KIVI KV-cache quantization</h3><span class="when">Fall 2025</span></div>
-        <p>2-bit KV-cache quantization for LLaMA-2 7B and 13B, evaluated on CNN/DailyMail, GSM8K, and CoQA. <a href="https://github.com/kamirian/kivi-kv-cache-quantization">Code</a></p>
+        <p>Led a team comparison of KV-cache compression methods. Reimplemented KIVI quantization and designed evaluation workflows spanning summarization, reasoning, and question answering. <a href="https://github.com/kamirian/kivi-kv-cache-quantization">Code</a></p>
+      </li>
+      <li class="entry">
+        <div class="entry-head"><h3>Face recognition and kernel methods</h3><span class="when">Spring 2025</span></div>
+        <p>Benchmarked dimensionality-reduction and classification pipelines on a 200-subject dataset. Implemented a gradient-descent kernel SVM to address CVXOPT numerical failures with high-degree polynomial kernels. <a href="https://github.com/kamirian/pattern-recognition-projects/tree/main/face_recognition">Code</a></p>
       </li>
       <li class="entry">
         <div class="entry-head"><h3>Image classification</h3><span class="when">Spring 2025</span></div>
-        <p>Logistic regression from scratch, RBF SVM with PCA (97.1% on MNIST), and VGG19 transfer learning. <a href="https://github.com/kamirian/pattern-recognition-projects/tree/main/image_classification">Code</a></p>
+        <p>Implemented logistic regression from scratch, evaluated PCA with an RBF SVM on MNIST (97.1% accuracy), and applied frozen-backbone VGG19 transfer learning to a 10-class species dataset. <a href="https://github.com/kamirian/pattern-recognition-projects/tree/main/image_classification">Code</a></p>
       </li>
-      <li class="entry">
-        <div class="entry-head"><h3>Face recognition</h3><span class="when">Spring 2025</span></div>
-        <p>PCA/MDA with Bayes, k-NN, kernel SVM, and AdaBoost on a 200-subject dataset, with a custom gradient-descent SVM. <a href="https://github.com/kamirian/pattern-recognition-projects/tree/main/face_recognition">Code</a></p>
-      </li>
+    </ul>
+  </section>
+
+  <section class="card" aria-labelledby="skills">
+    <h2 id="skills">Technical toolkit</h2>
+    <dl class="toolkit">
+      <div><dt>Scientific computing</dt><dd>Python, NumPy, Bash, Git<br>SLURM job arrays and HPC workflows</dd></div>
+      <div><dt>Atomistic simulation</dt><dd>ASE, pymatgen, MatCalc<br>VASP / DFT, LAMMPS, NEB, molecular dynamics</dd></div>
+      <div><dt>Machine learning</dt><dd>PyTorch, scikit-learn, TensorFlow / Keras<br>Model evaluation, transfer learning, kernel methods</dd></div>
+    </dl>
+  </section>
+
+  <section class="card" aria-labelledby="news">
+    <h2 id="news">News</h2>
+    <ul class="news">
+      <li><span class="date">Sep 2026</span><span>Released <a href="https://arxiv.org/abs/2609.05714">FP-DeErr</a>, our preprint on application-oriented error decomposition for foundation potentials, alongside <a href="https://github.com/mogroupumd/FP-DeErr">open-source code</a> and a public <a href="https://mogroupumd.github.io/FP-DeErr/">leaderboard</a>.</span></li>
+      <li><span class="date">2024</span><span>Joined <a href="https://yifeimo.github.io/">Prof. Yifei Mo's group</a> at the University of Maryland.</span></li>
+      <li><span class="date">Aug 2023</span><span>Started my PhD in Materials Science and Engineering at the University of Maryland.</span></li>
+      <li><span class="date">Spring 2023</span><span>Awarded the University of Maryland Dean's Fellowship.</span></li>
+      <li><span class="date">Apr 2023</span><span>Our paper, <a href="https://journal.issiran.com/article_707246.html"><em>Analytical and numerical instability analysis of functionally graded low-carbon steel</em></a>, was published.</span></li>
     </ul>
   </section>
 
@@ -202,7 +231,7 @@
     </ul>
   </section>
 
-  <footer>Last updated October 2026</footer>
+  <footer><span>Kiyan Amirian · <a href="mailto:kamirian@umd.edu">kamirian@umd.edu</a></span><span>Last updated October 2026</span></footer>
 
 </main>
 </body>
