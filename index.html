@@ -111,10 +111,12 @@
         <a href="https://arxiv.org/abs/2609.05714">Preprint</a>
         <a href="https://github.com/mogroupumd/FP-DeErr">Code</a>
         <a href="https://mogroupumd.github.io/FP-DeErr/">Leaderboard</a>
+        <a href="https://doi.org/10.6084/m9.figshare.33332610">DFT-NEB data</a>
+        <a href="https://doi.org/10.6084/m9.figshare.33334329">Chalcogenide data</a>
         <a href="fp-deerr-overview.png">Overview figure</a>
       </p>
       <div class="project-body">
-        <p>Designed and developed FP-DeErr, an application-oriented error-decomposition framework for foundation potentials. Co-designed the study and carried out benchmarking against density functional theory (DFT), introducing task-specific metrics to identify where errors arise and how they affect simulation outcomes across three tasks:</p>
+        <p>Designed and developed FP-DeErr, an application-oriented error-decomposition framework for foundation potentials. Built its evaluation code and public leaderboard, and implemented automated job generation and high-throughput benchmark execution using SLURM job arrays. Co-designed the study and carried out benchmarking against density functional theory (DFT), introducing task-specific metrics to identify where errors arise and how they affect simulation outcomes across three tasks:</p>
         <figure class="logo">
           <a href="https://mogroupumd.github.io/FP-DeErr/"><img src="fp-deerr-logo.png" alt="FP-DeErr logo, linking to the leaderboard" width="520" height="548" loading="lazy"></a>
         </figure>
@@ -130,10 +132,19 @@
         </li>
         <li class="ion">
           <a class="task-fig" href="https://mogroupumd.github.io/FP-DeErr/ion-migration-neb.html" aria-label="Ion migration by NEB leaderboard"><svg viewBox="0 -6 270 152" aria-hidden="true"><line class="f-base" x1="15" y1="138" x2="262" y2="138"/><path class="f-dft" d="M 15 120 C 80 120, 100 15, 140 15 S 200 105, 255 105"/><path class="f-fp" d="M 15 120 C 80 120, 100 55, 140 55 S 200 118, 255 118"/><circle class="f-dft-fill" cx="15" cy="120" r="8"/><circle class="f-dft-fill" cx="140" cy="15" r="8"/><circle class="f-dft-fill" cx="255" cy="105" r="8"/><circle class="f-fp-pt" cx="140" cy="55" r="7.5"/><circle class="f-fp-pt" cx="255" cy="118" r="7.5"/></svg></a>
-          <p><strong>Ion migration by nudged elastic band (NEB).</strong> Designed agreement metrics beyond migration-barrier accuracy to assess FP reliability across 154 Li- and Na-ion pathways, testing energy-profile shape, endpoint energy ranking, and convergence. Decomposed errors into contributions from the energy landscape, endpoint relaxation, and pathway forces. <a href="https://mogroupumd.github.io/FP-DeErr/ion-migration-neb.html">Leaderboard</a></p>
+          <p><strong>Ion migration by nudged elastic band (NEB).</strong> Developed a workflow to benchmark FP-NEB against DFT-NEB on 154 Li- and Na-ion pathways, with agreement metrics beyond migration-barrier accuracy: energy-profile shape, endpoint energy ranking, and convergence. Decomposed errors into contributions from the energy landscape, endpoint relaxation, and pathway forces. <a href="https://mogroupumd.github.io/FP-DeErr/ion-migration-neb.html">Leaderboard</a></p>
         </li>
       </ul>
-      <p class="tools">Models evaluated include UMA, MACE, and CHGNet.<br>Python · ASE · MatCalc · pymatgen · SLURM / HPC</p>
+      <p class="tools">The public leaderboard benchmarks 18+ FPs, including UMA, MACE, and CHGNet.<br>Python · ASE · MatCalc · pymatgen · SLURM / HPC</p>
+    </article>
+
+    <article class="entry research-entry" id="ionic-descriptor">
+      <div class="entry-head">
+        <h3>A Simple Universal Descriptor for Solid-State Ionic Conductors Across Chemistries</h3>
+        <span class="when">Submitted</span>
+      </div>
+      <p class="authors">Ramanuja Srinivasan Saravanan, Charles E Schwarz, Felix Adams, <strong>Kiyan Amirian</strong>, Yifei Mo</p>
+      <p class="meta">Co-author · University of Maryland</p>
     </article>
 
     <article class="entry research-entry" id="graded-steel">
@@ -166,16 +177,16 @@
     <p class="section-intro">Course projects in machine learning implementation and efficient LLM inference.</p>
     <ul class="boxes">
       <li class="entry">
-        <div class="entry-head"><h3>KIVI KV-cache quantization</h3><span class="when">Fall 2025</span></div>
-        <p>Led a team comparison of KV-cache compression methods. Reimplemented KIVI quantization and designed evaluation workflows spanning summarization, reasoning, and question answering. <a href="https://github.com/kamirian/kivi-kv-cache-quantization">Code</a></p>
+        <div class="entry-head"><h3>KV-cache optimization for large language models</h3><span class="when">Fall 2025</span></div>
+        <p>Led a team comparing KV-cache compression techniques (StreamingLLM, KIVI, ZipCache) for long-context LLM inference. Reimplemented KIVI 2-bit quantization for LLaMA-2 7B/13B using PyTorch, and designed evaluation workflows across summarization, reasoning, and question answering, adding metrics for token match rate, entity hallucination, and sentence compliance. <a href="https://github.com/kamirian/kivi-kv-cache-quantization">Code</a></p>
       </li>
       <li class="entry">
         <div class="entry-head"><h3>Face recognition and kernel methods</h3><span class="when">Spring 2025</span></div>
         <p>Benchmarked dimensionality-reduction and classification pipelines on a 200-subject dataset. Implemented a gradient-descent kernel SVM to address CVXOPT numerical failures with high-degree polynomial kernels. <a href="https://github.com/kamirian/pattern-recognition-projects/tree/main/face_recognition">Code</a></p>
       </li>
       <li class="entry">
-        <div class="entry-head"><h3>Image classification</h3><span class="when">Spring 2025</span></div>
-        <p>Implemented logistic regression from scratch, evaluated PCA with an RBF SVM on MNIST (97.1% accuracy), and fine-tuned VGG19 on a 10-class species dataset (97.06% accuracy). <a href="https://github.com/kamirian/pattern-recognition-projects/tree/main/image_classification">Code</a></p>
+        <div class="entry-head"><h3>Image classification and transfer learning</h3><span class="when">Spring 2025</span></div>
+        <p>Implemented logistic regression from scratch, evaluated PCA with an RBF SVM on MNIST (97.1% test accuracy), and fine-tuned VGG19 on a 10-class monkey-species dataset (97.06% validation accuracy). <a href="https://github.com/kamirian/pattern-recognition-projects/tree/main/image_classification">Code</a></p>
       </li>
     </ul>
   </section>
@@ -183,9 +194,9 @@
   <section class="card" aria-labelledby="skills">
     <h2 id="skills">Technical toolkit</h2>
     <dl class="toolkit">
-      <div><dt>Scientific computing</dt><dd>Python, NumPy, Bash, Git<br>SLURM job arrays and HPC workflows</dd></div>
+      <div><dt>Scientific computing</dt><dd>Python, NumPy, Bash, Git<br>SLURM job arrays and high-throughput HPC workflows<br>Coding agents: Claude Code, Codex</dd></div>
       <div><dt>Atomistic simulation</dt><dd>ASE, pymatgen, MatCalc<br>VASP / DFT, LAMMPS, NEB, molecular dynamics</dd></div>
-      <div><dt>Machine learning</dt><dd>PyTorch, scikit-learn, TensorFlow / Keras<br>Model evaluation, transfer learning, kernel methods</dd></div>
+      <div><dt>Machine learning</dt><dd>PyTorch, Hugging Face Transformers, scikit-learn, TensorFlow / Keras<br>Model evaluation, transfer learning, kernel methods</dd></div>
     </dl>
   </section>
 
@@ -204,7 +215,7 @@
     <h2 id="education">Education</h2>
     <ul class="boxes">
       <li class="entry">
-        <div class="entry-head"><h3>PhD, Materials Science and Engineering</h3><span class="when">2023 to present</span></div>
+        <div class="entry-head"><h3>PhD, Materials Science and Engineering</h3><span class="when">2023 to Aug 2027 (expected)</span></div>
         <p class="meta">University of Maryland, College Park</p>
       </li>
       <li class="entry">
@@ -217,9 +228,9 @@
   <section class="card" aria-labelledby="teaching">
     <h2 id="teaching">Teaching</h2>
     <ul class="rows">
-      <li><span>Kinetics, Diffusion and Phase Transformations</span><span class="when">University of Maryland, Fall 2024</span></li>
-      <li><span>Mechanical Properties II</span><span class="when">Shiraz University, Spring 2022</span></li>
-      <li><span>Fundamentals of Computer</span><span class="when">Shiraz University, Spring 2020</span></li>
+      <li><span>Teaching assistant: Kinetics, Diffusion and Phase Transformations</span><span class="when">University of Maryland, Fall 2024</span></li>
+      <li><span>Teaching assistant: Mechanical Properties II</span><span class="when">Shiraz University, Spring 2022</span></li>
+      <li><span>Teaching assistant: Fundamentals of Computer</span><span class="when">Shiraz University, Spring 2020</span></li>
     </ul>
   </section>
 
