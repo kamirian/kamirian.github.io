@@ -55,7 +55,12 @@ h1 { font: 600 clamp(2.35rem, 4.5vw, 3.15rem)/1.1 var(--serif); letter-spacing: 
 .role a { color: inherit; }
 .lead { font-size: 1.375rem; line-height: 1.5; letter-spacing: -.012em; margin-bottom: .85rem; }
 .about { max-width: 41rem; }
-.personal { font-size: 1rem; color: var(--muted); margin-bottom: 0; }
+.personal { flex-basis: 100%; margin: 0 0 .35rem; }
+.status { font: 600 .9375rem/1.5 var(--sans); color: var(--ink); margin: -.55rem 0 1.3rem; }
+.paper-fig.entry-fig { margin: 1.1rem 0 0; max-width: 46rem; }
+.subprojects { margin: 0; padding-left: 1.25rem; }
+.subprojects > li + li { margin-top: 1.5rem; }
+.subprojects p { margin: 0; }
 .portrait { margin: .2rem 0 0; }
 .portrait img { display: block; width: 100%; height: auto; aspect-ratio: 3/4; object-fit: cover; border-radius: 7px; }
 /* Keep contact icons subordinate to the introduction and readable without CSS. */
@@ -67,7 +72,7 @@ h1 { font: 600 clamp(2.35rem, 4.5vw, 3.15rem)/1.1 var(--serif); letter-spacing: 
 h2 { font: 700 1.625rem/1.25 var(--heading); letter-spacing: -.025em; margin: 0 0 1.4rem; padding-bottom: .8rem; border-bottom: 2px solid var(--rule); }
 h3 { font: 650 1.125rem/1.4 var(--sans); letter-spacing: -.01em; margin: 0; }
 .section-intro { color: var(--ink); margin-top: -.55rem; margin-bottom: 1.25rem; max-width: 49rem; }
-.interests { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.35rem; margin: 0; padding: 0; list-style: none; }
+.interests { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.35rem; margin: 0; padding: 0; list-style: none; }
 .interests li { padding: 1.25rem; background: var(--box); border-radius: 6px; border-top: 2px solid var(--rule-strong); }
 .interests li:nth-child(1) { border-top-color: var(--force); }
 .interests li:nth-child(2) { border-top-color: var(--phase); }
